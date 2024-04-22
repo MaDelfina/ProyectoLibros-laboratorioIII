@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Form, Button, Col, Row } from "react-bootstrap";
-import PropTypes from "prop-types";
+import propTypes from "prop-types";
 
 const BookSearch = ({onSearch}) => {
     const [searchTerm, setSearchTerm] = useState("");
@@ -42,8 +42,8 @@ const BookSearch = ({onSearch}) => {
     );
 }
 
-BookSearch.PropTypes={
-    onSearch: PropTypes.func,
+BookSearch.propTypes={
+    onSearch: propTypes.func,
 };
 
 export default BookSearch;

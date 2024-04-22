@@ -1,5 +1,5 @@
 import "./BookItem.css"
-import PropTypes from "prop-types";
+import propTypes from "prop-types";
 import { useState } from "react";
 import { Card, Button } from "react-bootstrap";
 
@@ -36,11 +36,11 @@ const BookItem = ({ title, author, rating, pageCount, imageUrl }) => {
 };
 
 BookItem.propTypes = {
-  title: PropTypes.string,
-  author: PropTypes.string,
-  pagesCount: PropTypes.number,
-  rating: PropTypes.array,
-  imageUrl: PropTypes.string,
+  title: propTypes.string,
+  author: propTypes.string,
+  pagesCount: propTypes.number,
+  rating: propTypes.array,
+  imageUrl: propTypes.string,
 };
 
 export default BookItem;

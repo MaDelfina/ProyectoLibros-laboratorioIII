@@ -1,6 +1,6 @@
 import BookItem from "../bookItem/BookItem";
 import "./Books.css"
-import PropTypes from "prop-types";
+import propTypes from "prop-types";
 
 const Books = ({ books }) => {
     return (
@@ -22,7 +22,7 @@ const Books = ({ books }) => {
   /*PropTypes es una forma de documentar los tipos de datos 
   que se esperan que se pasen a un componente en React*/
   Books.propTypes = {
-    books: PropTypes.array,
+    books: propTypes.array,
   };
   
   export default Books;

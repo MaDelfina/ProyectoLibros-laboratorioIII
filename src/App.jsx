@@ -47,8 +47,8 @@ const App = () => {
   }
 
   const searchHandler = (searchTerm) => {
-    const filterBooks = BOOKS.filter((book) =>
-      book.bookTitle.toLowerCase().includes(searchTerm.toLowerCase));
+    const filterBooks = books.filter((book) =>
+    book.bookTitle.toLowerCase().includes(searchTerm.toLowerCase()));
     setBooks(filterBooks);
   }
 
